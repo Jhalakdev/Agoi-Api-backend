@@ -1,8 +1,9 @@
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb+srv://Ash1:Ash1@cluster0.pbef3.mongodb.net/?retryWrites=true&w=majority", {
+mongoose.connect("mongodb+srv://agoifinancialservice:123@cluster0.ssfgm.mongodb.net/?retryWrites=true&w=majority", {
 	useNewUrlParser: true,
 	useUnifiedTopology: true,
+	enableUtf8Validation: false,
 }).then(() => {
 	console.log(mongoose.connection.readyState);
 	console.log("connection is successful");
