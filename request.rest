@@ -8,8 +8,10 @@ POST http://localhost:3002/api/v1/share/create/
 Content-Type: application/json
 
 {
-"share_id": "4",
+"share_id": "5",
 "share_name": "test stock Name",
+"share_icon": "file", //use postman as form datatype 
+"cloudnery_id": "stirng",
 "share_companyType": "company Type",
 "face_value": "0",
 "price_per_lot": 1,
@@ -34,20 +36,4 @@ Content-Type: application/json
 DELETE   http://localhost:3002/api/v1/share/62c0fd2523eac2c9d19ab913
 Content-Type: application/json
 
-###
-
-
-id*
-stock_name
-stock_sp_id**  int 
-sotck_companyType
-face_value* 0
-price_per_lot*
-stock_quantity
-stock_discription
-stock_status* Available
-stock_icon
-avaiable_on*    NSDL
-createdAt*
-UpdatedAt*
 ###

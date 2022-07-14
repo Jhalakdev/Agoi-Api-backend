@@ -8,7 +8,9 @@ let shareSchema = new mongoose.Schema(
     },
     share_icon: {
       type: mongoose.Schema.Types.String,
-      trim: true,
+    },
+    cloudinary_id: {
+      type: mongoose.Schema.Types.String,
     },
 
     share_id: {

@@ -1,22 +1,10 @@
 const { doc } = require("../Config/db");
 const db = require("../Config/db");
 const Share = require("../Model/shareModel");
+const  cloudinary = require("../Utils/cloudinary.js");
+const  upload  = require("../Utils/multer");
 
-//Create
-exports.createShare = async (req, res, next) => {
-  try {
-    let data = req.body;
-    let result = await Share.create(data);
-    res.send({
-      message: "share created successfully",
-      data: result,
-    });
-  } catch (err) {
-    res.send({
-      message: err.message,
-    });
-  }
-};
+
 
 //get all share
 exports.getAllShare = async (req, res, next) => {
